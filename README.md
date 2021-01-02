@@ -4,6 +4,7 @@
     基于SQL Server的通讯录管理系统，C#实现，中间注册增加了一个通过html+Servlet实现的网页注册(可以局域网注册)
 
 ##功能一览
+-----------------
 ![image](https://github.com/Tongmengjun/Address--Book-System/blob/main/%E8%AF%B4%E6%98%8E%E5%9B%BE%E7%89%87/%E7%99%BB%E5%BD%95.png)
 
 
