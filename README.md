@@ -6,14 +6,14 @@
 ##功能一览
 -----------------
 
-###登陆面板
+登陆面板(https://github.com/Tongmengjun/Address--Book-System/blob/main/%E8%AF%B4%E6%98%8E%E5%9B%BE%E7%89%87/%E7%99%BB%E5%BD%95.png)
 -----------------
     会有一个默认的头像，用户注册的时候可以选择头像，也可以在菜单里更换头像，在登录面板再次登录时会更新头像
 
 ![image](https://github.com/Tongmengjun/Address--Book-System/blob/main/%E8%AF%B4%E6%98%8E%E5%9B%BE%E7%89%87/%E7%99%BB%E5%BD%95.png)
 
 
-###注册面板
+注册面板(https://github.com/Tongmengjun/Address--Book-System/blob/main/%E8%AF%B4%E6%98%8E%E5%9B%BE%E7%89%87/%E6%B3%A8%E5%86%8C.png)
 ------------------
     可以选择面板注册或网页注册
 
@@ -21,7 +21,7 @@
 
 
 
-###注销面板
+注销面板
 -------------------
     用户可以注销账号
 ![image](https://github.com/Tongmengjun/Address--Book-System/blob/main/%E8%AF%B4%E6%98%8E%E5%9B%BE%E7%89%87/%E7%BD%91%E9%A1%B5%E6%B3%A8%E5%86%8C.png)
