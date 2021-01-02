@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C96F7F35-5FD6-4FAA-8322-386DDAF12D5E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>通讯录信息管路系统</RootNamespace>
+    <AssemblyName>通讯录信息管路系统</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Addcount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addcount.Designer.cs">
+      <DependentUpon>Addcount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change_Image.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change_Image.Designer.cs">
+      <DependentUpon>Change_Image.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Check_Group.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Check_Group.Designer.cs">
+      <DependentUpon>Check_Group.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Check_Phone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Check_Phone.Designer.cs">
+      <DependentUpon>Check_Phone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contact_Manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact_Manage.Designer.cs">
+      <DependentUpon>Contact_Manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAO.cs" />
+    <Compile Include="DateGView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logout.Designer.cs">
+      <DependentUpon>Logout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modification_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modification_Password.Designer.cs">
+      <DependentUpon>Modification_Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Phone_BookDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Phone_BookDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Phone_BookDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Phone_BookDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Phone_BookDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Phone_BookDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Phone_BookDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Phone_BookDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Phone_BookDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Phone_BookDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Phone_BookDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Phone_BookDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Phone_BookDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Phone_BookDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Phone_BookDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Phone_BookDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Phone_BookDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Phone_BookDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Regist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Regist.Designer.cs">
+      <DependentUpon>Regist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Addcount.resx">
+      <DependentUpon>Addcount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change_Image.resx">
+      <DependentUpon>Change_Image.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Check_Group.resx">
+      <DependentUpon>Check_Group.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Check_Phone.resx">
+      <DependentUpon>Check_Phone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact_Manage.resx">
+      <DependentUpon>Contact_Manage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logout.resx">
+      <DependentUpon>Logout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modification_Password.resx">
+      <DependentUpon>Modification_Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Regist.resx">
+      <DependentUpon>Regist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\通讯录信息管路系统.csprojAssemblyReference.cache" />
+    <None Include="Phone_BookDataSet.xsc">
+      <DependentUpon>Phone_BookDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Phone_BookDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Phone_BookDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Phone_BookDataSet.xss">
+      <DependentUpon>Phone_BookDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Phone_BookDataSet1.xsc">
+      <DependentUpon>Phone_BookDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Phone_BookDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Phone_BookDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Phone_BookDataSet1.xss">
+      <DependentUpon>Phone_BookDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Phone_BookDataSet2.xsc">
+      <DependentUpon>Phone_BookDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Phone_BookDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Phone_BookDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Phone_BookDataSet2.xss">
+      <DependentUpon>Phone_BookDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Phone_BookDataSet3.xsc">
+      <DependentUpon>Phone_BookDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Phone_BookDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Phone_BookDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Phone_BookDataSet3.xss">
+      <DependentUpon>Phone_BookDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Phone_BookDataSet4.xsc">
+      <DependentUpon>Phone_BookDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Phone_BookDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Phone_BookDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Phone_BookDataSet4.xss">
+      <DependentUpon>Phone_BookDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Phone_BookDataSet5.xsc">
+      <DependentUpon>Phone_BookDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Phone_BookDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Phone_BookDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Phone_BookDataSet5.xss">
+      <DependentUpon>Phone_BookDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Phone_BookDataSet6.xsc">
+      <DependentUpon>Phone_BookDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Phone_BookDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Phone_BookDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Phone_BookDataSet6.xss">
+      <DependentUpon>Phone_BookDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Phone_BookDataSet7.xsc">
+      <DependentUpon>Phone_BookDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Phone_BookDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Phone_BookDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Phone_BookDataSet7.xss">
+      <DependentUpon>Phone_BookDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Phone_BookDataSet8.xsc">
+      <DependentUpon>Phone_BookDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Phone_BookDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Phone_BookDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Phone_BookDataSet8.xss">
+      <DependentUpon>Phone_BookDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="通信录管理系统.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="obj\Debug\TempPE\Phone_BookDataSet.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Phone_BookDataSet1.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Phone_BookDataSet2.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Phone_BookDataSet3.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Phone_BookDataSet4.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Phone_BookDataSet5.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Phone_BookDataSet6.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Phone_BookDataSet7.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Phone_BookDataSet8.Designer.cs.dll" />
+    <Content Include="obj\Debug\通讯录信息管路系统.csproj.FileListAbsolute.txt" />
+    <Content Include="picture\DteView.jpg" />
+    <Content Include="picture\iu.jpg" />
+    <Content Include="picture\logo.png" />
+    <Content Include="picture\QQ图片.jpg" />
+    <Content Include="picture\QQ图片20191024102006.jpg" />
+    <Content Include="picture\修改头像.jpg" />
+    <Content Include="picture\头像1.jpg" />
+    <Content Include="picture\注册头像.jpg" />
+    <Content Include="picture\注册背景图.jpg" />
+    <Content Include="picture\添加联系人.jpg" />
+    <Content Include="picture\登录窗口1.jpg" />
+    <Content Include="picture\登录背景图.jpg" />
+    <Content Include="picture\联系人管理.jpg" />
+    <Content Include="picture\菜单.jpg" />
+    <Content Include="picture\菜单背景.jpg" />
+    <Content Include="picture\通讯录登录窗口.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

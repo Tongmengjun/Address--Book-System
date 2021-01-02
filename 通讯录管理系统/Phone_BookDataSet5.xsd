@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Phone_BookDataSet5" targetNamespace="http://tempuri.org/Phone_BookDataSet5.xsd" xmlns:mstns="http://tempuri.org/Phone_BookDataSet5.xsd" xmlns="http://tempuri.org/Phone_BookDataSet5.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Phone_BookConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Phone_BookConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.通讯录信息管路系统.Properties.Settings.GlobalReference.Default.Phone_BookConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Phone_ViewTableAdapter" GeneratorDataComponentClassName="Phone_ViewTableAdapter" Name="Phone_View" UserDataComponentName="Phone_ViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Phone_BookConnectionString (Settings)" DbObjectName="Phone_Book.dbo.Phone_View" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Contact_Name, Contact_Phone, GP_Name FROM dbo.Phone_View</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Contact_Name" DataSetColumn="Contact_Name" />
+              <Mapping SourceColumn="Contact_Phone" DataSetColumn="Contact_Phone" />
+              <Mapping SourceColumn="GP_Name" DataSetColumn="GP_Name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Phone_BookDataSet5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Phone_BookDataSet5" msprop:Generator_UserDSName="Phone_BookDataSet5">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Phone_View" msprop:Generator_TableClassName="Phone_ViewDataTable" msprop:Generator_TableVarName="tablePhone_View" msprop:Generator_TablePropName="Phone_View" msprop:Generator_RowDeletingName="Phone_ViewRowDeleting" msprop:Generator_RowChangingName="Phone_ViewRowChanging" msprop:Generator_RowEvHandlerName="Phone_ViewRowChangeEventHandler" msprop:Generator_RowDeletedName="Phone_ViewRowDeleted" msprop:Generator_UserTableName="Phone_View" msprop:Generator_RowChangedName="Phone_ViewRowChanged" msprop:Generator_RowEvArgName="Phone_ViewRowChangeEvent" msprop:Generator_RowClassName="Phone_ViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Contact_Name" msprop:Generator_ColumnVarNameInTable="columnContact_Name" msprop:Generator_ColumnPropNameInRow="Contact_Name" msprop:Generator_ColumnPropNameInTable="Contact_NameColumn" msprop:Generator_UserColumnName="Contact_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Contact_Phone" msprop:Generator_ColumnVarNameInTable="columnContact_Phone" msprop:Generator_ColumnPropNameInRow="Contact_Phone" msprop:Generator_ColumnPropNameInTable="Contact_PhoneColumn" msprop:Generator_UserColumnName="Contact_Phone" type="xs:long" />
+              <xs:element name="GP_Name" msprop:Generator_ColumnVarNameInTable="columnGP_Name" msprop:Generator_ColumnPropNameInRow="GP_Name" msprop:Generator_ColumnPropNameInTable="GP_NameColumn" msprop:Generator_UserColumnName="GP_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

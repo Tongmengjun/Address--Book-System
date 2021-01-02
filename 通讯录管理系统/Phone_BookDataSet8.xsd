@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Phone_BookDataSet8" targetNamespace="http://tempuri.org/Phone_BookDataSet8.xsd" xmlns:mstns="http://tempuri.org/Phone_BookDataSet8.xsd" xmlns="http://tempuri.org/Phone_BookDataSet8.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Phone_BookConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Phone_BookConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.通讯录信息管路系统.Properties.Settings.GlobalReference.Default.Phone_BookConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Contact_ViewTableAdapter" GeneratorDataComponentClassName="Contact_ViewTableAdapter" Name="Contact_View" UserDataComponentName="Contact_ViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Phone_BookConnectionString (Settings)" DbObjectName="Phone_Book.dbo.Contact_View" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Contact_ID, Contact_Name, GP_Name, Contact_Phone, Contact_Sex, Contact_Birthday, Contact_QQ, Contact_Address, Contact_Email, Contact_WorkAddress FROM dbo.Contact_View</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Contact_ID" DataSetColumn="Contact_ID" />
+              <Mapping SourceColumn="Contact_Name" DataSetColumn="Contact_Name" />
+              <Mapping SourceColumn="GP_Name" DataSetColumn="GP_Name" />
+              <Mapping SourceColumn="Contact_Phone" DataSetColumn="Contact_Phone" />
+              <Mapping SourceColumn="Contact_Sex" DataSetColumn="Contact_Sex" />
+              <Mapping SourceColumn="Contact_Birthday" DataSetColumn="Contact_Birthday" />
+              <Mapping SourceColumn="Contact_QQ" DataSetColumn="Contact_QQ" />
+              <Mapping SourceColumn="Contact_Address" DataSetColumn="Contact_Address" />
+              <Mapping SourceColumn="Contact_Email" DataSetColumn="Contact_Email" />
+              <Mapping SourceColumn="Contact_WorkAddress" DataSetColumn="Contact_WorkAddress" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Phone_BookDataSet8" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Phone_BookDataSet8" msprop:Generator_UserDSName="Phone_BookDataSet8">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Contact_View" msprop:Generator_TableClassName="Contact_ViewDataTable" msprop:Generator_TableVarName="tableContact_View" msprop:Generator_TablePropName="Contact_View" msprop:Generator_RowDeletingName="Contact_ViewRowDeleting" msprop:Generator_RowChangingName="Contact_ViewRowChanging" msprop:Generator_RowEvHandlerName="Contact_ViewRowChangeEventHandler" msprop:Generator_RowDeletedName="Contact_ViewRowDeleted" msprop:Generator_UserTableName="Contact_View" msprop:Generator_RowChangedName="Contact_ViewRowChanged" msprop:Generator_RowEvArgName="Contact_ViewRowChangeEvent" msprop:Generator_RowClassName="Contact_ViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Contact_ID" msprop:Generator_ColumnVarNameInTable="columnContact_ID" msprop:Generator_ColumnPropNameInRow="Contact_ID" msprop:Generator_ColumnPropNameInTable="Contact_IDColumn" msprop:Generator_UserColumnName="Contact_ID" type="xs:long" />
+              <xs:element name="Contact_Name" msprop:Generator_ColumnVarNameInTable="columnContact_Name" msprop:Generator_ColumnPropNameInRow="Contact_Name" msprop:Generator_ColumnPropNameInTable="Contact_NameColumn" msprop:Generator_UserColumnName="Contact_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GP_Name" msprop:Generator_ColumnVarNameInTable="columnGP_Name" msprop:Generator_ColumnPropNameInRow="GP_Name" msprop:Generator_ColumnPropNameInTable="GP_NameColumn" msprop:Generator_UserColumnName="GP_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Contact_Phone" msprop:Generator_ColumnVarNameInTable="columnContact_Phone" msprop:Generator_ColumnPropNameInRow="Contact_Phone" msprop:Generator_ColumnPropNameInTable="Contact_PhoneColumn" msprop:Generator_UserColumnName="Contact_Phone" type="xs:long" />
+              <xs:element name="Contact_Sex" msprop:Generator_ColumnVarNameInTable="columnContact_Sex" msprop:Generator_ColumnPropNameInRow="Contact_Sex" msprop:Generator_ColumnPropNameInTable="Contact_SexColumn" msprop:Generator_UserColumnName="Contact_Sex" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Contact_Birthday" msprop:Generator_ColumnVarNameInTable="columnContact_Birthday" msprop:Generator_ColumnPropNameInRow="Contact_Birthday" msprop:Generator_ColumnPropNameInTable="Contact_BirthdayColumn" msprop:Generator_UserColumnName="Contact_Birthday" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Contact_QQ" msprop:Generator_ColumnVarNameInTable="columnContact_QQ" msprop:Generator_ColumnPropNameInRow="Contact_QQ" msprop:Generator_ColumnPropNameInTable="Contact_QQColumn" msprop:Generator_UserColumnName="Contact_QQ" type="xs:long" minOccurs="0" />
+              <xs:element name="Contact_Address" msprop:Generator_ColumnVarNameInTable="columnContact_Address" msprop:Generator_ColumnPropNameInRow="Contact_Address" msprop:Generator_ColumnPropNameInTable="Contact_AddressColumn" msprop:Generator_UserColumnName="Contact_Address" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Contact_Email" msprop:Generator_ColumnVarNameInTable="columnContact_Email" msprop:Generator_ColumnPropNameInRow="Contact_Email" msprop:Generator_ColumnPropNameInTable="Contact_EmailColumn" msprop:Generator_UserColumnName="Contact_Email" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Contact_WorkAddress" msprop:Generator_ColumnVarNameInTable="columnContact_WorkAddress" msprop:Generator_ColumnPropNameInRow="Contact_WorkAddress" msprop:Generator_ColumnPropNameInTable="Contact_WorkAddressColumn" msprop:Generator_UserColumnName="Contact_WorkAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Contact_View" />
+      <xs:field xpath="mstns:Contact_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
