@@ -35,6 +35,9 @@
 
 
 ![image](https://github.com/Tongmengjun/Address--Book-System/blob/main/%E8%AF%B4%E6%98%8E%E5%9B%BE%E7%89%87/%E4%BF%AE%E6%94%B9%E5%AF%86%E7%A0%81.png)
+
+
+
 修改密码
 
 
@@ -70,9 +73,6 @@
 
 
 ![image](https://github.com/Tongmengjun/Address--Book-System/blob/main/%E8%AF%B4%E6%98%8E%E5%9B%BE%E7%89%87/%E6%9F%A5%E6%89%BE.png)
-
-
-
 查找，用户可以根据电话、姓名、账号信息查找联系人
 
 
